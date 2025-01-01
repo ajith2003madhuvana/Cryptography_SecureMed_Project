@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDE1LWJnLTExLmpwZw.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            height: 100vh;
+        }
+        .topnav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .container {
+            margin-top: 80px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        ul {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="/home" class="active">Home</a>
+        <a href="/predictinfo">Encrypt Data</a>
+        <a href="/logout" style="float: right;">Logout</a>
+    </div>
+
+    <div class="container">
+        <h1>Welcome, Patient!</h1>
+        <p>
+            You can securely upload and encrypt your medical data on this platform. Ensure that your sensitive information is protected and only accessible to authorized doctors.
+        </p>
+        <h3>Steps for Encrypting and Sharing Data:</h3>
+        <ul>
+            <li><strong>Step 1:</strong> Click on the <strong>"Encrypt Data"</strong> option in the navigation bar to upload your medical reports.</li>
+            <li><strong>Step 2:</strong> Use the encryption feature to secure your data. A private key will be generated for you to share with your doctor.</li>
+            <li><strong>Step 3:</strong> Share the encrypted data and the private key with your doctor through the designated method.</li>
+        </ul>
+        <p>
+            This process ensures that your medical information remains confidential and is only accessible to the intended recipient. If you have any issues, please contact support.
+        </p>
+        <a href="/predictinfo" class="btn btn-primary">Encrypt Your Data</a>
+    </div>
+</body>
+</html>
